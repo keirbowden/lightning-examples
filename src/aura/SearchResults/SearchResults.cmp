@@ -1,0 +1,9 @@
+<aura:component >
+	<aura:handler event="bblightning:SearchEvent" action="{!c.searched}"/>
+    <aura:attribute name="msg" type="String" 
+                    default="You haven't searched for anything yet" />
+    <h1>Results Component</h1>
+    <div>
+        {!v.msg}
+    </div>
+</aura:component>

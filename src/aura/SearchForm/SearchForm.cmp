@@ -1,0 +1,13 @@
+<aura:component >
+	<aura:registerEvent name="SearchEvent" type="bblightning:SearchEvent" />
+    <aura:attribute name="term" type="String" />
+    <h1>Search Component</h1>
+    <div>
+    	<form>
+            <ui:inputText aura:id="name" placeholder="Enter search string"
+                          value="{!v.term}" />
+    		<ui:button label="Go" press="{!c.doSearch}" aura:id="searchbtn"/>
+        </form>
+    </div>
+    <br/>
+</aura:component>

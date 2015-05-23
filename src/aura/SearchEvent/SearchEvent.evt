@@ -1,0 +1,3 @@
+<aura:event type="APPLICATION" description="Search Event">
+    <aura:attribute name="term" type="String" />
+</aura:event>
